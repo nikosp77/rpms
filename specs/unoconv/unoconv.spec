@@ -20,8 +20,8 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires: python >= 2.0
 Requires: python >= 2.0
-%{!?_with_openoffice2:Requires:openoffice.org-pyuno >= 2.0}
-%{?_with_openoffice2:Requires:openoffice.org2-pyuno >= 2.0}
+%{!?_with_openoffice2:Requires:libreoffice-pyuno >= 2.0}
+%{?_with_openoffice2:Requires:libreoffice-pyuno >= 2.0}
 
 %description
 unoconv converts between any document format that OpenOffice understands.
